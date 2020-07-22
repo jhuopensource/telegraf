@@ -5,15 +5,16 @@ import (
 	"database/sql"
 	"errors"
 	"fmt"
-	"github.com/influxdata/telegraf"
-	"github.com/influxdata/telegraf/plugins/inputs"
 	"io/ioutil"
 	"log"
 	"regexp"
 	"sync"
 
+	"github.com/influxdata/telegraf"
+	"github.com/influxdata/telegraf/plugins/inputs"
+
 	// go-mssqldb initialization
-	_ "github.com/zensqlmonitor/go-mssqldb"
+	_ "github.com/denisenkom/go-mssqldb"
 )
 
 // SQLServer struct
